@@ -12,7 +12,7 @@ questions.
 ## Getting Started
 Clone the repository in your local system:
 ```
-git clone https://gitlab.com/dhruvil1819/ipl-datasetproject.git
+git clone https://gitlab.com/usrname/ipl-datasetproject.git
 npm install
 ```
 ## Questions
