@@ -8,11 +8,14 @@ var getNoOfMatchesWonPerTeamPerYear = functions.getNoOfMatchesWonPerTeamPerYear
 var getExtraRunsPerTeamForYear = functions.getExtraRunsPerTeamForYear
 var getEconomicalBowlersForYear = functions.getEconomicalBowlersForYear
 
+//console.log(deliveryData)
+//console.log(matchesData)
 let jsonData={};
 jsonData["MatchesPlayed"]=getNoOfMatchesPlayed(matchesData);
-jsonData["MatchesWonPerTeamPerYear"]=getNoOfMatchesWonPerTeamPerYear();
-jsonData["ExtraRunsPerTeam"]=getExtraRunsPerTeamForYear();
-jsonData["EconomicalBowler"]=getEconomicalBowlersForYear();
+jsonData["MatchesWonPerTeamPerYear"]=getNoOfMatchesWonPerTeamPerYear(matchesData);
+jsonData["ExtraRunsPerTeam"]=getExtraRunsPerTeamForYear(matchesData,deliveryData);
+jsonData["EconomicalBowler"]=getEconomicalBowlersForYear(matchesData,deliveryData);
+
 
 fs.writeFile('./public/data.json',
 JSON.stringify(jsonData, null, 4),

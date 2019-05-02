@@ -143,9 +143,9 @@ describe('IPL module', () => {
       expect(getNoOfMatchesWonPerTeamPerYear).toBeDefined()
     })
     test('should return an object', () => {
-      expect(getNoOfMatchesWonPerTeamPerYear()).toBeDefined()
-      expect(typeof getNoOfMatchesWonPerTeamPerYear()).toEqual('object')
-      expect(getNoOfMatchesWonPerTeamPerYear()).toEqual(expectedResult1)
+      expect(getNoOfMatchesWonPerTeamPerYear(matchesData)).toBeDefined()
+      expect(typeof getNoOfMatchesWonPerTeamPerYear(matchesData)).toEqual('object')
+      expect(getNoOfMatchesWonPerTeamPerYear(matchesData)).toEqual(expectedResult1)
     })
   })
   describe('Extra runs conceeded per team for year, getExtraRunsPerTeamForYear', () => {
@@ -162,9 +162,9 @@ describe('IPL module', () => {
       expect(getExtraRunsPerTeamForYear).toBeDefined()
     })
     test('should return an object', () => {
-      expect(getExtraRunsPerTeamForYear()).toBeDefined()
-      expect(typeof getExtraRunsPerTeamForYear()).toEqual('object')
-      expect(getExtraRunsPerTeamForYear()).toEqual(expectedResult2)
+      expect(getExtraRunsPerTeamForYear(matchesData,deliveryData)).toBeDefined()
+      expect(typeof getExtraRunsPerTeamForYear(matchesData,deliveryData)).toEqual('object')
+      expect(getExtraRunsPerTeamForYear(matchesData,deliveryData)).toEqual(expectedResult2)
     })
   })
   describe('Economical bowlers for year, getEconomicalBowlersForYear', () => {
@@ -182,9 +182,9 @@ describe('IPL module', () => {
       expect(getEconomicalBowlersForYear).toBeDefined()
     })
     test('should return an object', () => {
-      expect(getEconomicalBowlersForYear()).toBeDefined()
-      expect(typeof getEconomicalBowlersForYear()).toEqual('object')
-      expect(getEconomicalBowlersForYear()).toEqual(expectedResult3)
+      expect(getEconomicalBowlersForYear(matchesData,deliveryData)).toBeDefined()
+      expect(typeof getEconomicalBowlersForYear(matchesData,deliveryData)).toEqual('object')
+      expect(getEconomicalBowlersForYear(matchesData,deliveryData)).toEqual(expectedResult3)
     })
   })
 })
