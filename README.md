@@ -52,7 +52,6 @@ npm run serve
 ```
 ## Restrictions
 
-* for loop for array is not allowed.
 * Only camelcase naming convention is valid.
 * All the names for the variables should self-explanatory.
 * Nested functions are not allowed.
