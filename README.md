@@ -1,7 +1,7 @@
  
 # IPL DATA-PROJECT I
 
-In this project raw data is given for the IPL seasons from 2008 to 2017.You have to gather relevant data for each questions using javascript and plot the appropriate chart for each of the
+In this project raw data is given for the IPL seasons from 2008 to 2017.I had to gather relevant data for each questions using javascript and plot the appropriate chart for each of the
 questions.
 ### Prerequisites
 
